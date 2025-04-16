@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #e6f2ff;
+  color: #222;
+}
+
+a {
+  color: #004080;
+  text-decoration: none;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #cce5ff;
+  border-bottom: 2px solid #99ccff;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  max-width: 700px;
+}
+
+.menu-strip {
+  background-color: #b3d9ff;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  border-bottom: 2px solid #99ccff;
+}
+
+.menu-items {
+  display: flex;
+  gap: 12px;
+  padding: 0 20px;
+}
+
+.menu-items button {
+  background: #004080;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.menu-items button:hover,
+.menu-items button.active {
+  background-color: #0066cc;
+}
+
+.content-box {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  border-radius: 10px;
+  min-height: 200px;
+  transition: all 0.3s ease;
+}
+
+.content-box h2 {
+  color: #0059b3;
+  margin-bottom: 15px;
+}
+.menu-strip-wrapper {
+  position: relative;
+  background-color: #b3d9ff;
+  overflow: hidden;
+  border-bottom: 2px solid #99ccff;
+  display: flex;
+  align-items: center;
+}
+
+.menu-strip {
+  overflow-x: auto;
+  white-space: nowrap;
+  flex: 1;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.menu-strip::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.menu-items {
+  display: flex;
+  gap: 12px;
+  padding: 0 20px;
+}
+
+.scroll-btn {
+  background-color: #004080;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 5;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+
+.scroll-btn:hover {
+  background-color: #0066cc;
+}
+
+.scroll-btn.left {
+  margin-left: 10px;
+}
+
+.scroll-btn.right {
+  margin-right: 10px;
+}
